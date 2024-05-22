@@ -544,7 +544,7 @@ setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `البوت شغال بواسطه‍ه ميجو :\n\n ${uptime}`;
+  const bio = `𝙋𝙃𝙊𝙉𝙄𝙓 𝘼𝙍 البوت شغال بواسطه‍ه  :\n\n ${uptime}`;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {
