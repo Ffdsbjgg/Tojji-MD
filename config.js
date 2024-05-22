@@ -24,7 +24,7 @@ global.titulowm2 = `☾︎ 𝑻𝒐𝒋𝒋𝒊-𝑴𝑫 ☽︎`
 global.igfg = '☾︎ 𝑻𝒐𝒋𝒋𝒊-𝑴𝑫 ☽︎';
 global.wait = '*[ ⏳ ] انتظر جاي التحميل تابع صاحب البوت*...\n\n*atom.bio/mego51_51*';
 
-global.imagen1 = fs.readFileSync('./Menu2.jpg');
+global.imagen1 = fs.readFileSync('./menu.mp4');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
 global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
 global.imagen4 = fs.readFileSync('./Menu.png');
