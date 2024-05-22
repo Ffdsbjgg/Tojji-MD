@@ -78,7 +78,7 @@ global.fcontact = { key: { fromMe: false, participant: 0@s.whatsapp.net, remoteJ
 > لا تتنسي أن تنظر الا قسم البنك "#13"
 > ⭔ ᴋᴀɴᴇᴋɪ ʙᴏᴛ ᴍᴅ ⭓
 `
-const vMimg = 'https://i.imgur.com/6cmZxwk.mp4'
+const vMimg = 'https://telegra.ph/file/ae7b0fa7e5eeced455452.mp4'
 
     const { result, key, timeout } = await conn.sendMessage(m.chat, { video: { url: vMimg }, caption: str.trim(),  gifPlayback: true,
   gifAttribution: 0}, { quoted: fcontact })
