@@ -20,7 +20,7 @@ let handler = async (m, { conn, usedPrefix, command}) => {
     let uptime = clockString(_uptime)
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 if (!(who in global.db.data.users)) throw ✳ لم يتم العثور على المستخدم في قاعدة البيانات
-let vn = './menu2.mp4'
+let vn = './venomMenu'
 //let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
 let user = global.db.data.users[who]
 let {money, joincount} = global.db.data.users[m.sender];
@@ -36,7 +36,6 @@ let more = String.fromCharCode(8206)
 let readMore = more.repeat(850) 
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 global.fcontact = { key: { fromMe: false, participant: 0@s.whatsapp.net, remoteJid: 'status@broadcast' }, message: { contactMessage: { displayName: ${name}, vcard: BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD}}}
-    m.react('🦂')
     const str = `*🛡KANEKI-BOT-MÐ🛡*
 ╮━━━━━━━━━━━━━╼⟢ـ
 ┃📌⎇ مرحـبـاً:  ${user}
@@ -79,7 +78,7 @@ global.fcontact = { key: { fromMe: false, participant: 0@s.whatsapp.net, remoteJ
 > لا تتنسي أن تنظر الا قسم البنك "#13"
 > ⭔ ᴋᴀɴᴇᴋɪ ʙᴏᴛ ᴍᴅ ⭓
 `
-const vMimg = 'https://telegra.ph/file/ae7b0fa7e5eeced455452.mp4'
+const vMimg = 'https://i.imgur.com/6cmZxwk.mp4'
 
     const { result, key, timeout } = await conn.sendMessage(m.chat, { video: { url: vMimg }, caption: str.trim(),  gifPlayback: true,
   gifAttribution: 0}, { quoted: fcontact })
