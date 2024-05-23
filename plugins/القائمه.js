@@ -1,4 +1,4 @@
-﻿import { createHash } from 'crypto'
+import { createHash } from 'crypto'
 import PhoneNumber from 'awesome-phonenumber'
 import { canLevelUp, xpRange } from '../lib/levelling.js'
 import fetch from 'node-fetch'
@@ -113,5 +113,3 @@ function clockString(ms) {
       }
       return res
     }
-  }
-}
