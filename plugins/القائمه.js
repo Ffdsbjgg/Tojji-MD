@@ -79,7 +79,7 @@ global.fcontact = { key: { fromMe: false, participant: `0@s.whatsapp.net`, remot
 > *_لا تتنسي أن تنظر الا قسم البنك "#13"_*
 > *_⭔ ᴋᴀɴᴇᴋɪ ʙᴏᴛ ᴍᴅ ⭓_*
 `
-const vMimg = 'https://imgur.com/a/1A6emzC'
+const vMimg = 'https://imgur.com/a/wHm8nrT'
 
     const { result, key, timeout } = await conn.sendMessage(m.chat, { video: { url: vMimg }, caption: str.trim(),  gifPlayback: true,
   gifAttribution: 0}, { quoted: fcontact })
