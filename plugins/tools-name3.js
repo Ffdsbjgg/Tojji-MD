@@ -15,17 +15,17 @@ let deleteNickname = (jid) => {
 let handlerDeleteNickname = async (m, { conn }) => {
     let name = m.text.split(" ").slice(1).join(" ").trim();
     if (!name) {
-        return await m.reply("📌╎اكـتـب لـقـب الـعـضــو لـحـذفــه");
+        return await m.reply("*📌╎اكـتـب لـقـب الـعـضــو لـحـذفــه*");
     }
 
     let jid = Object.keys(global.db.data.nicknames || {}).find(key => global.db.data.nicknames[key] === name);
     if (!jid) {
-       return await m.reply("‼╎لـقـب غـيـر صـحـيـح");
+       return await m.reply("‼️╎لـقـب غـيـر صـحـيـح");
     }
 
     let success = deleteNickname(jid);
     if (success) {
-        return await m.reply(📂╎تـم حـذف لـقـب *[ ${name} ]* مـن الالـقـاب);
+        return await m.reply(`📂╎تـم حـذف لـقـب *[ ${name} ]* مـن الالـقـاب`);
     } else {
         return await m.reply("❌╎لـقـب غـيـر صـحـيـح");
     }
