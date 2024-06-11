@@ -1,8 +1,8 @@
 let handlerGetNicknames = async (m, { conn }) => {
     let nicknames = global.db.data.nicknames || {};
-    let nicknamesText = Object.keys(nicknames).map((jid) => @${jid.replace(/@.+/, '')}: ${nicknames[jid]}).join("\n");
+    let nicknamesText = Object.keys(nicknames).map((jid) => `@${jid.replace(/@.+/, '')}: ${nicknames[jid]}`).join("\n");
     if (nicknamesText) {
-        m.reply(🗃╎قـائـمـة الالـقـاب :↓\n${nicknamesText}, null, {
+        m.reply(`🗃️╎قـائـمـة الالـقـاب :↓\n${nicknamesText}`, null, {
             mentions: Object.keys(nicknames)
         });
     } else {
